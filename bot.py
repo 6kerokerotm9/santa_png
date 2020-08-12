@@ -2,6 +2,8 @@
 import discord
 import random
 import json
+import os
+from dotenv import load_dotenv
 
 
 class MyClient(discord.Client):
@@ -83,4 +85,6 @@ class MyClient(discord.Client):
             await self.save_names(message, self.pairs)
 
 client = MyClient()
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 client.run(TOKEN)
