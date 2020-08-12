@@ -83,4 +83,4 @@ class MyClient(discord.Client):
             await self.save_names(message, self.pairs)
 
 client = MyClient()
-client.run('NjU3MTAxNDQwMDY1NzMyNjM4.XfsTZw.H32NGIC9w4c682dBIad4Rlrps9w')
+client.run(TOKEN)
