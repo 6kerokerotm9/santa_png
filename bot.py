@@ -53,6 +53,13 @@ async def on_message(message):
     if message.author.bot:
         return
 
+
+    elif message.content == '!uses':
+        await message.channel.send("usages: !umu, !people, !me, !roll")
+
+    elif message.content == '!juju':
+        await message.channel.send("fuck you juju")
+
     elif message.content == '!umu':
         await message.channel.send('https://www.youtube.com/watch?v=dQ_d_VKrFgM')
 
@@ -61,6 +68,7 @@ async def on_message(message):
         for member in people:
             if not member.bot:
                 await message.channel.send(member.name + " " + member.discriminator)
+        await message.channel.send("done")
 
     elif message.content == "!me":
         if message.author.name in pairs:
