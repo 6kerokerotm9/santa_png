@@ -6,7 +6,7 @@ Since this is hosted locally, I will have to run it from my machine
 
 Commands
 - !uses: lists out the commands
-- !umu: literally prints out umu
+- !umu: links holiday spirit
 - !people: writes out a list of people in the channel (which I assume are the people participating)
 - !me: bot will resend you your recepient 
 - !roll: rolls the names and will not override the old list if used more than once in a server
