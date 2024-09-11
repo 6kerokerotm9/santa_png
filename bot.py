@@ -49,6 +49,7 @@ async def read_json(message):
     except:
         return
 
+#shuffling algo
 def shuffle(x):
     copy = x.copy()
     if len(x) == 1:
